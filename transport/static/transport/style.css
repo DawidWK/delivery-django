@@ -1,0 +1,110 @@
+html,body {
+    height:100%;
+}
+
+h1.nav-logo {
+    color: #D22929;
+}
+
+a {
+    color: gray;
+    text-decoration: none;
+}
+
+a:hover {
+    color: black;
+}
+
+.center-wait {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #EFEFEF;
+}
+
+/* kcr */
+
+html {
+    scroll-behavior: smooth;
+}
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+.main section.page1 {
+    background: rgb(97,66,52);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url('background-pizza.jpg');
+    background-image: url('background-pizza.jpg'), linear-gradient(90deg, rgba(51,35,27,1) 0%, rgba(255,135,79,1) 50%, rgba(51,35,27,1) 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.main section.page2 {
+    background: #F5F5F5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2.button
+{
+    list-style-type: none;
+    font-size: 4vw;
+    color: #efefef;
+    text-align: center;
+    padding-top: 2%;
+}
+
+a.read-more{
+    border: 2px solid #efefef;
+    text-decoration: none;
+    color: inherit;
+}
+
+.notnav {
+    list-style-type: none;
+    font-size: 4vw;
+    padding-top: 2%;
+    padding-left: 5%;
+    padding-right: 15%;
+}
+
+/* kc */
+.form-parent {
+    border: 1px solid #9D9D9D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FFFFFF;
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+}
+.order-parent {
+    border: 1px solid #9D9D9D;
+    background: #FFFFFF;
+    height: 400px;
+    width: 500px;
+    padding: 10px;
+}
+.form- {
+    padding: 20px;
+
+}
+.order-title {
+    position: relative;
+    top: 10x;
+    left: 10px;
+}
+.navbar {
+    position: fixed;
+    width: 100%;
+    top: 0;
+}

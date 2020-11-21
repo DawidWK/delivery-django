@@ -1,0 +1,16 @@
+{% extends 'transport/base.html' %}
+
+{% block content %}
+<div class="center-wait">
+    <div class='order-parent'>
+        <div class='order-id'>
+            <h1> YOUR ORDER ({{ order_id }}) </h1>
+        </div>
+        {% if is_delivered %}
+            <p> Your order is on the way to your home! A delivery guy will be there in a minute.</p>
+        {% else %}
+            <p> Your order is being prepered. You are nr. {{ position }} in queue. Food will be delivered in: {{ time }} </p>
+        {% endif%}
+    </div>
+</div>
+{% endblock %}

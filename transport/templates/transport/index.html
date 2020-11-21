@@ -1,0 +1,30 @@
+{% extends 'transport/base.html' %}
+
+{% block content %}
+<div class="main">
+    <div id="home">
+    <section class="page1">
+        <h2 class="button">
+            <a class="read-more" href="{% url 'transport:index' %}#order">Order Now!</a>
+        </h2>
+    </section>
+    </div>
+    <section class="page2">
+        <div id="order">
+            <div class='form-parent'>
+                <div class='form-'>
+                    <h1 class='order-title'> ORDER </h1>
+                    <table>
+                        <form action="" method="POST" enctype="multipart/form-data" >
+                            {% csrf_token %}
+                            {{ form.as_table }}
+                    </table>
+                    <button type="submit" class="btn btn-outline-dark">Confirm</button>
+                        </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+{% endblock %}
